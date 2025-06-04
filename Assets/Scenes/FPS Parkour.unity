@@ -2159,6 +2159,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CajaPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 8974969325110899430, guid: 37119527393a62545adb8e9699075f8b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37119527393a62545adb8e9699075f8b, type: 3}
 --- !u!1 &1756395350
