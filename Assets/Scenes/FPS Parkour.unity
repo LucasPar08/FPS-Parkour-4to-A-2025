@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dineroManager: {fileID: 0}
-  text: {fileID: 0}
+  text: {fileID: 1881640548}
 --- !u!4 &570558279
 Transform:
   m_ObjectHideFlags: 0
@@ -2012,7 +2012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac10a990904edd241aa4ad89e0383646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiManager: {fileID: 0}
+  uiManager: {fileID: 570558278}
   playerMoney: 100
 --- !u!1001 &1654691365
 PrefabInstance:
@@ -2211,6 +2211,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1701504026}
     m_Modifications:
+    - target: {fileID: 1518563242151854608, guid: 37119527393a62545adb8e9699075f8b,
+        type: 3}
+      propertyPath: precio
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518563242151854608, guid: 37119527393a62545adb8e9699075f8b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5123382731376126713, guid: 37119527393a62545adb8e9699075f8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2490,7 +2500,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54, y: -162}
+  m_AnchoredPosition: {x: -289, y: 130.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1881640548
@@ -2511,7 +2521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ':300
+  m_text: ':100
 
 '
   m_isRightToLeft: 0
@@ -2579,7 +2589,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 8.782471, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1881640548}
     characterCount: 5
@@ -2980,7 +2990,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
