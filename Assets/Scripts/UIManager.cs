@@ -5,10 +5,24 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    public TMP_Text contador;
+    public TMP_Text contadorvida;
     public DineroManager dineroManager;
-    public TMP_Text text;
-    public void updateMoney()
+    public VidaManager vidaManager;
+    float plata;
+    float vida;
+
+    private void Start()
     {
-        text.text = ": " + dineroManager.playerMoney;
+        dineroManager = FindObjectOfType<DineroManager>();
+        vidaManager = FindObjectOfType<VidaManager>();
+    }
+
+    private void Update()
+    {
+        plata = dineroManager.playerMoney;
+        vida = vidaManager.playerVida;
+        contador.text = "Plata" + plata.ToString();
+        contadorvida.text = "Vida" + vida.ToString();
     }
 }

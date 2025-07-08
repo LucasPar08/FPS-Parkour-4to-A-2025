@@ -2,22 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MercanciaScript : MonoBehaviour
+public class SacaVida : MonoBehaviour
 {
 
-    public int precio = -10;
-    public DineroManager dineroManager;
+    public int danio = 10;
+    public VidaManager vidaManager;
 
     void Start()
     {
-        dineroManager = FindObjectOfType<DineroManager>();
+        vidaManager = FindObjectOfType<VidaManager>();
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (dineroManager.UpdateMoney(-precio) == true)
+            if (vidaManager.UpdateHealth(-danio) == true)
             {
                 Destroy(gameObject);
             }

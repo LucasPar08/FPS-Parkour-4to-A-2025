@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
- 
-public class DineroManager : MonoBehaviour
+
+public class VidaManager : MonoBehaviour
 {
-    public float playerMoney;
+    public float playerVida;
 
 
-    public bool UpdateMoney(float amount)
+    public bool UpdateHealth(float amount)
     {
-        if (playerMoney + amount < 0)
+        if (playerVida + amount < 0)
         {
             return false;
         }
         else
         {
-            playerMoney += amount;
+            playerVida += amount;
             return true;
         }
     }
